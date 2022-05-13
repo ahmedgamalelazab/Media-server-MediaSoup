@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  jimmymediasoupwithmostafa:
+    build: .
+    restart: always
+    environment:
+      - PORT=12555
+    tty: true
+    ports:
+      - "12555:12555"
+      - "3000:3000"
+      - "2000-2020:2000-2020"
+      - "10000-10100:10000-10100"
+    volumes:
+      - "./src/:/usr/app/src"
+    networks:
+      - default

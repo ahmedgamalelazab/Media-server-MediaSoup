@@ -1,0 +1,24 @@
+{
+  "name": "jimmy-mostafa",
+  "description": "simple media soups app to test the production environment",
+  "authors": "jimmy-mostafa",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js" ,
+    "dev":"DEBUG='mediasoup*' node app.js"  
+  },
+  "dependencies": {
+    "@mapbox/node-pre-gyp": "1.x",
+    "cors": "^2.8.5",
+    "debug": "*",
+    "express": "*",
+    "helmet": "*",
+    "mediasoup": "*",
+    "morgan": "*",
+    "socket.io": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "*"
+  }
+}
